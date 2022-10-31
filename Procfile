@@ -1,1 +1,1 @@
-web: income Proyecto_API.wsgi --log-file -
+web: gunicorn Proyecto_API.wsgi --log-file -
