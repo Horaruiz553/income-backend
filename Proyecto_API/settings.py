@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     'corsheaders.middleware.CorsMiddleware',
     "django.middleware.common.CommonMiddleware",
@@ -56,7 +57,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = "Proyecto_API.urls"
@@ -149,4 +149,4 @@ STATICFILES_DIR = {
     os.path.join(BASE_DIR, 'static')
 }
 
-staticfiles_storage = 'white noise.storage.CompressedManifestStaticFilesStorage'
+staticfiles_storage = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
