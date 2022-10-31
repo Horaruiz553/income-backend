@@ -1,0 +1,1 @@
+web: income Proyecto_API.wsgi --log-file -
