@@ -93,11 +93,15 @@ WSGI_APPLICATION = "Proyecto_API.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django-api',
+        #'NAME': 'django-api',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': '1',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        #'PASSWORD': '1',
+        'PASSWORD': 'Draco2019/',
+        #'HOST': 'localhost',
+        'HOST': '190.128.212.110',
+        #'PORT': '5432',
+        'PORT': '1080',
     }
 }
 
