@@ -27,4 +27,4 @@ urlpatterns = [
     path("user/", include('users.urls')),
     path("income/", include('income.urls')),
     path("egress/", include('egress.urls')),
-] + static(settings.STATIC_URL, document_root=settings.py)
+] + static(settings.STATIC_URL, document_root=settings)
